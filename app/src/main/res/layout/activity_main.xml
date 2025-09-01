@@ -5,33 +5,37 @@
     android:orientation="vertical"
     android:gravity="center"
     android:padding="24dp"
-    android:background="#008080"> <!-- Teal background -->
+    android:background="#004C4C"> <!-- Dark Teal background -->
 
     <!-- Title -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Set Your Alarm"
-        android:textSize="24sp"
+        android:text="⏰ Set Your Alarm"
+        android:textSize="26sp"
         android:textStyle="bold"
         android:textColor="#FFFFFF"
-        android:layout_marginBottom="20dp" />
+        android:layout_marginBottom="28dp" />
 
-    <!-- Default Time Picker (white theme) -->
+    <!-- Time Picker -->
     <TimePicker
         android:id="@+id/timePicker"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:timePickerMode="spinner" />
+        android:layout_marginBottom="28dp"
+        android:timePickerMode="spinner"
+        android:theme="@android:style/Theme.Material.Light.Dialog" />
 
     <!-- Set Alarm Button -->
     <Button
         android:id="@+id/setAlarmButton"
-        android:layout_width="wrap_content"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="Set Alarm"
         android:backgroundTint="#20B2AA"
-        android:textColor="#FFFFFF" />
+        android:textColor="#FFFFFF"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/rounded_button" />
 
 </LinearLayout>
